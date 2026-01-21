@@ -325,6 +325,9 @@ GET /
 Prediction Request
 POST /predict
 ```
+bike_sharing/
+├── Readme
+├── Screenshot_21-1-2026_143623_127.0.0.1
 📸 Screenshot testing. 
 ---
 ## 🌟 Project Highlights
