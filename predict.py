@@ -1,3 +1,4 @@
+import os
 import pickle
 import pandas as pd
 import numpy as np
@@ -65,3 +66,8 @@ def predict(data: BikeInput):
     return {
         "predicted_rentals": int(prediction)
     }
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 9696))
+    app.run(host="0.0.0.0", port=port)
