@@ -11,4 +11,5 @@ COPY encoder.pkl .
 
 EXPOSE 9696
 
-CMD ["gunicorn", "--bind", "0.0.0.0:9696", "predict:app"]
+# Start FastAPI app
+CMD ["uvicorn", "predict:app", "--host", "0.0.0.0", "--port", "9696"]
