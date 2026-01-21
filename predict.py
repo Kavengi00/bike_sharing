@@ -47,7 +47,7 @@ def health():
 @app.post("/predict")
 def predict(data: BikeInput):
     # Convert input to DataFrame
-    df = pd.DataFrame([data.dict()])
+    df = pd.DataFrame([data.model_dump()])
 
     # Encode categorical features
     X_cat = encoder.transform(df[categorical_features])
